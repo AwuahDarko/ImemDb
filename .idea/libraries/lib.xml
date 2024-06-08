@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-core-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-datatype-jsr310-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/feign-core-12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-annotations-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-databind-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-module-parameter-names-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/feign-jackson-12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/jackson-datatype-jdk8-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/feign-form-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemorydb/src/lib/lombok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

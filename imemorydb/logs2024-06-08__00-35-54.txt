@@ -1,0 +1,3 @@
+null
+ Cause:->> null
+ Stack:->> [java.base/java.io.DataInputStream.readFully(DataInputStream.java:201), java.base/java.io.DataInputStream.readUTF(DataInputStream.java:613), java.base/java.io.DataInputStream.readUTF(DataInputStream.java:568), app.DBServer$ServerSocketAcceptedThread.run(DBServer.java:91), java.base/java.lang.Thread.run(Thread.java:832)]

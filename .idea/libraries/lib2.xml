@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-module-parameter-names-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/feign-jackson-12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/feign-form-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/feign-core-12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-databind-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-datatype-jdk8-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-core-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-datatype-jsr310-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/jackson-annotations-2.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/imemjavaclient/out/production/imemjavaclient/lib/lombok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
