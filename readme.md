@@ -9,4 +9,5 @@
 ### Simple call ImemDb.put(key, value) to store data and ImemDb.get(key) to retrieve data
 
 TODO
-- make data persistent (work on going)
+- CLI interface for database
+- Replication of data across cluster

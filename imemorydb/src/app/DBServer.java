@@ -3,7 +3,9 @@ package app;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import models.Request;
+import services.FileIO;
 import services.JSON;
+import services.Persistence;
 import services.Utils;
 
 import java.io.BufferedReader;
@@ -19,11 +21,22 @@ public class DBServer {
     private ServerSocket serverSocket;
 
     private final Timer serverTimer = new Timer();
-    private final Map<String, String> database = new HashMap<>();
+    private Map<String, String> database = new HashMap<>();
+    Persistence persistence = null;
 
 
     public void initialize() {
         System.out.println((System.getProperty("os.arch") + "/" + System.getProperty("os.name") + "-->" + getIpAddress()));
+        try {
+//            FileIO.createFile("./imemdb.db");
+            Class.forName("org.sqlite.JDBC");
+            persistence = new Persistence();
+            persistence.createTable();
+            database = persistence.fetchData();
+        }catch (IOException | ClassNotFoundException e){
+            e.printStackTrace();
+            Utils.createLog(e);
+        }
 
         Thread socketServerThread = new Thread(new SocketServerThread());
         socketServerThread.setDaemon(true); //terminate the thread when program end
@@ -106,6 +119,7 @@ public class DBServer {
                 String route = messagePair[0];
                 String body = messagePair[1];
 
+
                 switch (route) {
                     case "/put" -> {
                         try {
@@ -132,6 +146,11 @@ public class DBServer {
 
 
                             database.put(request.getKey(), request.getValue());
+                            if(persistence.isKeyPresent(request.getKey())){
+                                persistence.updateValue(request.getKey(), request.getValue());
+                            }else{
+                                persistence.saveData(request.getKey(), request.getValue());
+                            }
                             resMap.put("message", "success");
                             resMap.put("status", "200");
                             sendResponse(JSON.convertMapToJson(resMap));
@@ -173,8 +192,9 @@ public class DBServer {
                             // Send response.
 
                             resMap.put("message", "success");
-                            resMap.put("data", database.get(request.getKey()));
+                            resMap.put("data", database.get(request.getKey()) == null ? "" : database.get(request.getKey()));
                             resMap.put("status", "200");
+
                             printWriter.println(JSON.convertMapToJson(resMap));
 
 

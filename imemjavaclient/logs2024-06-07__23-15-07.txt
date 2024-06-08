@@ -1,3 +1,0 @@
-null
- Cause:->> null
- Stack:->> [java.base/java.io.DataInputStream.readUnsignedShort(DataInputStream.java:344), java.base/java.io.DataInputStream.readUTF(DataInputStream.java:593), java.base/java.io.DataInputStream.readUTF(DataInputStream.java:568), app.MessagingClient.performSynchronousSend(MessagingClient.java:46), app.MessagingClient.sendMessageToServerSync(MessagingClient.java:27), put(ImemDb.java:91), Main.main(Main.java:14)]

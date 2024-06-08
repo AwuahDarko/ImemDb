@@ -14,8 +14,7 @@ public class FileIO {
             fileWriter.close();
         }catch (IOException e){
             e.printStackTrace();
-            Utils.createLog(e.getMessage() + "\n Cause:->> "
-                    + e.getCause() + "\n Stack:->> " + Arrays.toString(e.getStackTrace()));
+            Utils.createLog(e);
         }
     }
 
@@ -29,8 +28,7 @@ public class FileIO {
         }catch (IOException e){
             isCreated = false;
             e.printStackTrace();
-            Utils.createLog(e.getMessage() + "\n Cause:->> "
-                    + e.getCause() + "\n Stack:->> " + Arrays.toString(e.getStackTrace()));
+            Utils.createLog(e);
         }
         return isCreated;
     }

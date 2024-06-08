@@ -29,6 +29,7 @@ class ImemDb{
             if($response == null) return null;
 
             if($response->status == 200){
+                
                 return $response->data;
             }
             
@@ -46,7 +47,7 @@ class ImemDb{
             $result = socket_connect($socket, ImemDb::$ip, ImemDb::$port) or throw new Exception("Could not connect to server");
             $map = array(
                 'key' => $key,
-                'value' => ''
+                'value' => $value
             );
 
             $json = json_encode($map)."\r\n";
